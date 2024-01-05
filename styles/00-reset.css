@@ -1,0 +1,70 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+/*     https://coolors.co/p/XHt8MIw34bn4fzyRO0UL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    max-width: 1800px;
+    margin: 0 auto;
+    font: 16px/1.5 'Verdana', sans-serif;
+    /* font-style: italic; */
+}
+
+.background-01 {
+    /* background-image: url('../backgrounds/background-01.jpg'); */
+    background-color: rgb(42,157,143,0.4);/*rgb(42,157,143)  #2a9d8f*/
+    background-size: 5px 5px;
+    background-repeat: repeat;
+    border-radius: 0.5em;
+}
+
+
+.link-button,
+input[type="submit"] {
+    padding: 0.2em 2em;
+    border: 0.5px solid black;
+    border-radius: 0.2rem;
+    background-color: rgb(124,124,124,0.5);/*rgb(124,124,124,0.5)*/
+    /* box-shadow: 0px 0px 1px 1px #000; */
+    text-decoration: none;
+    font-size: 1em;
+    /* font-weight: bolder; */
+    font-style: italic;
+    color: #222;
+}
+
+.send-button,
+.form-example input[type="submit"] {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* .work-section-column div:hover, */
+.send-button:hover,
+.link-form:hover,
+.form-example input[type="submit"]:hover {
+    transform: scale(1.10);
+    z-index: 1;
+}
+
+.link-button:hover {
+    border: 0.5px solid black;
+}
+
+.logo-message i {
+    font-size: 0.7em;
+    /* color: #333; */
+}
+
