@@ -1,0 +1,92 @@
+<html>
+
+
+<head>
+    <meta charset="utf-8" meta="" name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="refresh" content="10">-->
+    <link rel="stylesheet" href="style.css">
+
+     
+<!-- *************************************** style ******************************************** -->
+
+
+
+<!-- ************************************* style ************************************************** -->
+
+</head>
+
+<body>
+    <h1>Garage Automated System (GAS) by Anton Ivanov (c) 2022 </h1>
+    <h1> </h1>
+    <h3> Hardware: WT32-SC01-3.5 Color Touch LCD (480x320)<br>
+        <hr>
+    Purpose: Active Security ensuring a Safe Workplace (SW)</h2>
+    <h2> <br></h2>
+    <h2>Owner</h2>
+    <form method="post" action="/post">First Name: <input type="text" name="text1" value=""><br>Last Name : <input
+            type="text" name="text2" value=""><br><input type="submit" name="submit" value=" submit1"></form><br>
+    <hr>
+    <h2>Security Codes</h2>
+    <form method="post" action="/post">
+        Code1 (2 Digit): <input type="number" class="dig2" name="number1" value=""><br>
+        Code2 (4 Digit): <input type="number" class="dig4" name="number2" value=""><br>
+        Code3 (6 Digit): <input type="number" class="dig6" name="number3" value=""><br>
+        <input type="submit" name="submit" value="submit2">
+        submit2:number1=&amp;number2=&amp;number3=&amp;submit=submit2
+    </form><br>
+    <hr>
+    <h2>Security Zones</h2>
+    <form method="post" action="/post"><input type="checkbox" name="check1">Zone 1<input type="checkbox"
+            name="check2">Zone 2<input type="checkbox" name="check3">Zone 3<br><input type="submit" name="submit"
+            value="submit3">submit3:submit=submit3</form><br>
+    <hr>
+    <h2>Security Level</h2>
+    <form method="post" action="/post"><input type="radio" name="radio" value="BASIC" checked="checked">BASIC<input
+            type="radio" name="radio" value="BIOMETRIC">BIOMETRIC<input type="radio" name="radio"
+            value="FORENSIC">FORENSIC<br><input type="submit" name="submit"
+            value="submit4">submit4:radio=BASIC&amp;submit=submit4</form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>Security Status</h2><br><button class="button" onmousedown="toggleCheckbox('alarm');"
+            ontouchstart="toggleCheckbox('alarm');                                 ">ARM / DISARM</button>
+        <script>function toggleCheckbox(x) { var xhr = new XMLHttpRequest(); xhr.open("GET", "/" + x, true); xhr.send(); }</script>
+        <br>
+    </form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>Garage Lighting</h2><br><button class="button" onmousedown="toggleCheckbox('lamp');"
+            ontouchstart="toggleCheckbox('lamp');                                 ">ON / OFF </button>
+        <script>function toggleCheckbox(x) { var xhr = new XMLHttpRequest(); xhr.open("GET", "/" + x, true); xhr.send(); }</script>
+        <br>
+    </form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>Garage Heater</h2><br><button class="button" onmousedown="toggleCheckbox('heater');"
+            ontouchstart="toggleCheckbox('heater');                                 ">ON / OFF </button>
+        <script>function toggleCheckbox(x) { var xhr = new XMLHttpRequest(); xhr.open("GET", "/" + x, true); xhr.send(); }</script>
+        <br>
+    </form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>Garage Peripheral</h2><br>
+    </form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>ALERT!</h2><br>
+    </form><br>
+    <hr>
+    <h2>RGB Brightness</h2>
+    <form method="post" action="/post"><!-- displays the range of the slider from 0 to 100 in steps of 1 -->R:<input
+            type="range" onchange="updateSliderPWM(this)" id="pwmSlider1" min="0" max="100" value="50" step="1"
+            class="slider"><span id="textSliderValue1">50</span><br>G:<input type="range"
+            onchange="updateSliderPWM(this)" id="pwmSlider2" min="0" max="100" value="50" step="1" class="slider"><span
+            id="textSliderValue2">50</span><br>B:<input type="range" onchange="updateSliderPWM(this)" id="pwmSlider3"
+            min="0" max="100" value="50" step="1" class="slider"><span id="textSliderValue3">50</span><br>
+        <script>function updateSliderPWM(element) { var pwmSliderValue1 = document.getElementById("pwmSlider1").value; document.getElementById("textSliderValue1").innerHTML = pwmSliderValue1; var pwmSliderValue2 = document.getElementById("pwmSlider2").value; document.getElementById("textSliderValue2").innerHTML = pwmSliderValue2; var pwmSliderValue3 = document.getElementById("pwmSlider3").value; document.getElementById("textSliderValue3").innerHTML = pwmSliderValue3; var httpRequest = new XMLHttpRequest(); httpRequest.open("POST", "/post?red=" + pwmSliderValue1 + "&green=" + pwmSliderValue2 + "&blue=" + pwmSliderValue3, true); httpRequest.send(); }</script>
+    </form><br>
+    <hr>
+
+    <h2 style="color: red;"></h2>
+</body>
+
+</html>

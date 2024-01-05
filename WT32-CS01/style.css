@@ -1,0 +1,116 @@
+/* input.dig1 { width: 2em; } */
+/* input.dig2 { width: 3em; } */
+/* input.dig3 { width: 3em; } */
+/* input.dig4 { width: 4em; } */
+/* input.dig5 { width: 5em; } */
+/* input.dig6 { width: 6em; } */
+/* input.dig10 { width: 10em; } */
+/* input.dig20 { width: 20em; } */
+/* input.dig50 { width: 50em; } */
+
+
+
+
+
+html {font-family: Arial; display: inline-block; text-align: center;}
+h1 {font-size: 2.0rem;color:#f1ffe7;padding: 10px;font-weight: 300;text-shadow: 2px 2px 3px #000;}
+/* h2:nth-child(1) {font-size: 1.8rem; color: red;} */
+h2 {font-size: 1.8rem; color: #f1ffe7; font-weight: 300;}
+h3 {font-size: 1.0rem; color: #f1ffe7;font-weight: 300;padding: 10px;border: 1px solid #80ed99;border-radius: 10px;}
+p {font-size: 1.9rem;}
+body {
+      max-width: 500px; 
+      margin:0px auto; 
+      padding-bottom: 20px; 
+      background-color: #22577a; 
+      position: relative;
+}
+.slider { -webkit-appearance: none; margin: 14px; width: 300px; height: 15px; border-radius: 5px; background: #39a6de; outline: none; -webkit-transition: .2s; transition: opacity .2s;}
+.slider::-webkit-slider-thumb {-webkit-appearance: none; appearance: none; width: 25px; height: 25px; border-radius: 12px; background: #f74d4d; cursor: pointer;}
+.slider::-moz-range-thumb { width: 25px; height: 25px; border-radius: 12px; background: #F74D4D; cursor: pointer; }
+.button {
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    color: #22577a;
+    background-color: #80ed99;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 6px #000;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+} 
+.button:hover {background-color: #57cc99}
+.button:active {
+    background-color: 57cc99;
+    box-shadow: 6px 6px 6px #000;
+    transform: translateY(2px);
+}
+h1:nth-child(1) {
+    border: 5px solid #80ed99;
+    border-radius: 15px;
+    background-color:#39a6de;
+    box-shadow: 6px 6px 6px #000;
+    box-shadow: inset 0px 0px 10px #000;
+    margin-top: 20px;
+}
+
+/* h1:nth-child(2):before {
+    position: absolute;
+    content: '';
+    width: 500px;
+    height: 170px;
+    left: 0px;
+    top: 0px;
+    background-color: goldenrod;
+    background-image: url(Garaj\ Toni.jpg);
+    background-size: 165%;
+    background-repeat: no-repeat;
+    background-position: 32% 20%;
+    height: 250px;
+    z-index: -1;
+} */
+
+input[type="text"],
+input[type="number"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #80ed99;
+    color: #22577a;
+    text-transform: uppercase;
+    font-size: 24px;
+    box-shadow: 10px 10px 6px #000;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+input[type="submit"]:hover {
+    background-color: #57cc99
+}
+input[type="submit"]:active {
+    background-color: #57cc99;
+    box-shadow: 6px 6px 6px #000;
+    transform: translateY(2px);
+}
+hr {
+    background-color: #80ed99;
+    border: none;
+    height: 1px;
+  }
+
+form {
+color: #f1ffe7;
+}
+
+
+
