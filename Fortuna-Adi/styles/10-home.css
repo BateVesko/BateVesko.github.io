@@ -174,6 +174,7 @@ article a {
     header {
         background-size: 170%;
     }
+
     .logo-message {
         display: none;
     }
@@ -183,6 +184,7 @@ article a {
     header {
         background-size: 210%;
     }
+    
     .pages ul {
         display: flex;
         flex-direction: column;
