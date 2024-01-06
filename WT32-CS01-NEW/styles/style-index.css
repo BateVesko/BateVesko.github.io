@@ -41,6 +41,7 @@ input[type="submit"]:active {
     padding: 10px 20px;
     font-size: 24px;
     text-align: center;
+    text-decoration: none;
     outline: none;
     color: #22577a;
     background-color: #80ed99;
