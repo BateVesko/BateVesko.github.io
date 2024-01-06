@@ -41,7 +41,7 @@ body {
     border: none;
     border-radius: 5px;
     box-shadow: 10px 10px 6px #000;
-    cursor: pointer;
+    /* cursor: pointer; */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
