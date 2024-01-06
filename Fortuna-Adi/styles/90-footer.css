@@ -161,3 +161,9 @@ footer hr {
         margin-bottom: 1em;
     }
 }
+
+@media (width<=800px) {
+    footer{
+        font-size: 14px;
+    }
+}

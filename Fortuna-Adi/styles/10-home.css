@@ -174,29 +174,25 @@ article a {
     header {
         background-size: 170%;
     }
+    .logo-message {
+        display: none;
+    }
 }
 
 @media (width<=800px) {
     header {
         background-size: 210%;
     }
+    .pages ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (width<=650px) {
     header {
-        background-size: 300%;
-        background-position: 80% 0%;
-        top: 0;
-        height: 18em;
-    }
-
-    .logo-container {
-        top: 45%;
-        left: 50%;
-        transform: translateX(-50%) scale(0.7);
-    }
-    .logo-container:hover {
-        transform: scale(0.9);
+        background-image: none;
+        height: 0;
     }
 }
 
