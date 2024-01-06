@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/welcome.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style-index.css">
+    <title>Welcome page</title>
 </head>
 <body>
-    <h1>Welcome from "Welcome"</h1>
+    <h1>Garage Automated System (GAS) by Anton Ivanov (c) 2022 </h1>
+    <!-- <h1> </h1> -->
+    <!-- <h3> Hardware: WT32-SC01-3.5 Color Touch LCD (480x320)<br>
+        <hr>
+    Purpose: Active Security ensuring a Safe Workplace (SW)</h2> -->
+    <!-- <h2> <br></h2> -->
+    <h1>Welcome to Bate Tony's garage environment monitoring and management system.</h1>
+    <hr>
+    <form method="post" action="/post">
+        <h2>Garage Lighting</h2><br><button class="button" onmousedown="toggleCheckbox('lamp');"
+            ontouchstart="toggleCheckbox('lamp');                                 ">ON / OFF </button>
+        <script>function toggleCheckbox(x) { var xhr = new XMLHttpRequest(); xhr.open("GET", "/" + x, true); xhr.send(); }</script>
+        <br>
+    </form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>Garage Heater</h2><br><button class="button" onmousedown="toggleCheckbox('heater');"
+            ontouchstart="toggleCheckbox('heater');                                 ">ON / OFF </button>
+        <script>function toggleCheckbox(x) { var xhr = new XMLHttpRequest(); xhr.open("GET", "/" + x, true); xhr.send(); }</script>
+        <br>
+    </form><br>
+    <hr>
 </body>
 </html>
