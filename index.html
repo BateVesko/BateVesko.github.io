@@ -42,6 +42,37 @@
                 <div class="project-name">
                     <h2>Проект "Фортуна-Ади" - Владо Щаков</h2>
                 </div>
+
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $username = "потребител";
+                    $password = "парола";
+
+                    $enteredUsername = $_POST["username"];
+                    $enteredPassword = $_POST["password"];
+
+                    if ($enteredUsername == $username && $enteredPassword == $password) {
+                        header("Location: /Fortuna-Adi/index-Adi.html");
+                        exit();
+                    } else {
+                        echo "Грешно потребителско име или парола.";
+                    }
+                }
+                ?>
+
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <!-- Полето за потребителско име -->
+                    <label for="username">Потребителско име:</label>
+                    <input type="text" id="username" name="username" required>
+                
+                    <!-- Полето за парола -->
+                    <label for="password">Парола:</label>
+                    <input type="password" id="password" name="password" required>
+                
+                    <!-- Поле за изпращане на формата -->
+                    <input type="submit" value="Изпрати">
+                </form>
+
                 <div class="circle-button">
                     <a href="Fortuna-Adi/index-Adi.html">Вижте тук!</a>
                 </div>
