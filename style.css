@@ -12,6 +12,7 @@ image {
 
 body {
     width: 100%;
+    height: 800px;
     margin: 0 auto;
     font: 14px/1.5 'Verdana', sans-serif;
 }
@@ -22,6 +23,10 @@ header {
     box-shadow: 0 10px 10px rgb(0,0,0,0.3);
     background-color: #f4d58d;
     
+}
+
+main {
+    height: 800px;
 }
 
 
@@ -55,7 +60,9 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 96%;
+    align-items: center;
+    width: 100%;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -64,10 +71,11 @@ header {
 .project {
     /* border: 1px solid red; */
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
     gap: 2px;
     width: 100%;
-    margin: 1px auto;
+    /* margin: 1px auto; */
 }
 
 .project-name {
@@ -75,7 +83,33 @@ header {
     margin: auto auto;
 }
 
-.circle-button {
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f4d58d;
+    box-shadow: inset 0 0 10px rgb(0,0,0,0.3);
+}
+
+/* input[type="button"]:hover {
+    transform: scale(1.1);
+} */
+
+/* .circle-button {
     background-color: #f4d58d;
     position: relative;
     width: 200px;
@@ -96,14 +130,13 @@ header {
     display: flex;
     position: absolute;
     justify-content: center;
-    /* background-color: yellow; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #333;
     text-decoration: none;
     font-size: 1.0rem;
-}
+} */
 
 
 
@@ -121,4 +154,11 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 1rem 20%;
+}
+
+hr {
+    border: 0.5px solid black;
+    background-color: #f4d58d;
+    height: 5px;
+    width: 50%;
 }

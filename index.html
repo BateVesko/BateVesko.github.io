@@ -27,64 +27,98 @@
 
     <main>
 
+        <script>
+            function validateForm(formClassName, expectedUsername, expectedPassword) {
+                var form = document.getElementsByClassName(formClassName)[0];
+                var username = form.getElementsByClassName("username")[0].value;
+                var password = form.getElementsByClassName("password")[0].value;
+        
+                if (username === expectedUsername && password === expectedPassword) {
+                    switch (formClassName) {
+                        case "form1":
+                            window.location.href = "Fortuna-Adi/pages/40-contacts.html";
+                            break;
+                        case "form2":
+                            window.location.href = "Fortuna-Adi/index-Adi.html";
+                            break;
+                        case "form3":
+                            window.location.href = "WT32-CS01-NEW/index-wt32new.html";
+                            break;
+                        default:
+                            alert("Грешно потребителско име или парола.");
+                    }
+                } else {
+                    alert("Грешно потребителско име или парола.");
+                }
+            }
+        </script>
+
         <div class="main-container">
             
             <div class="project">
                 <div class="project-name">
                     <h2>Проект Счетоводна къща "Фидес"</h2>
                 </div>
-                <div class="circle-button">
-                    <a href="#">Вижте тук!</a>
+
+                <div class="project-form">
+                    <form class="form1">
+                        <label for="username">Потребителско име:</label>
+                        <input type="text" class="username" name="username" required>
+                        <br>
+                        <label for="password">Парола:</label>
+                        <input type="password" class="password" name="password" required>
+                        <br>
+                        <input type="button" value="Изпрати" onclick="validateForm('form1', 'Bojana', '1111')">
+                    </form>
                 </div>
+
             </div>
+
             <hr>
+
             <div class="project">
                 <div class="project-name">
                     <h2>Проект "Фортуна-Ади" - Владо Щаков</h2>
                 </div>
 
-                <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $username = "потребител";
-                    $password = "парола";
+                <div class="project-form">
 
-                    $enteredUsername = $_POST["username"];
-                    $enteredPassword = $_POST["password"];
-
-                    if ($enteredUsername == $username && $enteredPassword == $password) {
-                        header("Location: /Fortuna-Adi/index-Adi.html");
-                        exit();
-                    } else {
-                        echo "Грешно потребителско име или парола.";
-                    }
-                }
-                ?>
-
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <!-- Полето за потребителско име -->
-                    <label for="username">Потребителско име:</label>
-                    <input type="text" id="username" name="username" required>
-                
-                    <!-- Полето за парола -->
-                    <label for="password">Парола:</label>
-                    <input type="password" id="password" name="password" required>
-                
-                    <!-- Поле за изпращане на формата -->
-                    <input type="submit" value="Изпрати">
-                </form>
-
-                <div class="circle-button">
-                    <a href="Fortuna-Adi/index-Adi.html">Вижте тук!</a>
+                    <form class="form2">
+                        <label for="username">Потребителско име:</label>
+                        <input type="text" class="username" name="username" required>
+                        <br>
+                        <label for="password">Парола:</label>
+                        <input type="password" class="password" name="password" required>
+                        <br>
+                        <input type="button" value="Изпрати" onclick="validateForm('form2', 'BateVesko', '0000')">
+                    </form>
                 </div>
+                
             </div>
+
             <hr>
+
             <div class="project">
                 <div class="project-name">
                     <h2>Project WT32-SC01 3.5" by Anton Ivanov</h2>
                 </div>
-                <div class="circle-button">
-                    <a href="WT32-CS01-NEW/index-wt32new.html">Вижте тук!</a>
+
+                <div class="project-form">
+
+                    <form class="form3">
+                        <label for="username">Потребителско име:</label>
+                        <input type="text" class="username" name="username" required>
+                        <br>
+                        <label for="password">Парола:</label>
+                        <input type="password" class="password" name="password" required>
+                        <br>
+                        <input type="button" value="Изпрати" onclick="validateForm('form3', 'Toni', '3333')">
+                    </form>
                 </div>
+
+                <!-- <div class="circle-button">
+                    <a href="WT32-CS01-NEW/index-wt32new.html">Вижте тук!</a>
+                </div> -->
             </div>
 
         </div>
@@ -100,3 +134,33 @@
     
 </body>
 </html>
+
+
+
+                <!-- <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $username = "потребител";
+                    $password = "парола";
+
+                    $enteredUsername = $_POST["username"];
+                    $enteredPassword = $_POST["password"];
+
+                    if ($enteredUsername == $username && $enteredPassword == $password) {
+                        header("Location: /Fortuna-Adi/index-Adi.html");
+                        exit();
+                    } else {
+                        echo "Грешно потребителско име или парола.";
+                    }
+                }
+                ?> -->
+
+                <!-- <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+                    <label for="username">Потребителско име:</label>
+                    <input type="text" id="username" name="username" required>
+                
+                    <label for="password">Парола:</label>
+                    <input type="password" id="password" name="password" required>
+                
+                    <input type="submit" value="Изпрати">
+                </form> -->
