@@ -1,3 +1,5 @@
+/* https://coolors.co/8d0801-bf0603-faa638-f4d58d */
+
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +24,7 @@ header {
     border-bottom: 0.5px solid #333;
     box-shadow: 0 10px 10px rgb(0,0,0,0.3);
     background-color: #f4d58d;
+    color: #8d0801;
     
 }
 
@@ -69,6 +72,7 @@ main {
     align-items: center;
     gap: 2px;
     width: 100%;
+    color: #8d0801;
 }
 
 .project-name {
@@ -85,6 +89,7 @@ label {
 
 input {
     margin-bottom: 10px;
+    border: 1px solid #8d0801;
 }
 
 input[type="button"] {
@@ -92,8 +97,9 @@ input[type="button"] {
     transform: translateX(-50%);
     padding: 5px 15px;
     font-size: 16px;
-    border: 1px solid #333;
+    border: 1px solid #8d0801;
     border-radius: 5px;
+    color: #8d0801;
     background-color: #f4d58d;
     box-shadow: inset 0 0 10px rgb(0,0,0,0.3);
     transform-origin: center; 
@@ -142,6 +148,7 @@ footer {
     position: absolute;
     bottom: 0;
     background-color: #f4d58d;
+    color: #8d0801;
 }
 
 .footer-container {
@@ -151,7 +158,7 @@ footer {
 }
 
 hr {
-    border: 0.5px solid black;
+    border: 0.5px solid #8d0801;
     background-color: #f4d58d;
     height: 5px;
     width: 50%;
