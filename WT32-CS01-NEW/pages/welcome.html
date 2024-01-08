@@ -14,6 +14,13 @@
     Purpose: Active Security ensuring a Safe Workplace (SW)</h2> -->
     <!-- <h2> <br></h2> -->
     <h1>Welcome to Bate Tony's garage environment monitoring and management system.</h1>
+    <hr> 
+    <form method="post" action="/post">
+        <h2>Security Status</h2><br><button class="button" onmousedown="toggleCheckbox('alarm');"
+            ontouchstart="toggleCheckbox('alarm');                                 ">ARM / DISARM</button>
+        <script>function toggleCheckbox(x) { var xhr = new XMLHttpRequest(); xhr.open("GET", "/" + x, true); xhr.send(); }</script>
+        <br>
+    </form><br>
     <hr>
     <form method="post" action="/post">
         <h2>Garage Lighting</h2><br><button class="button" onmousedown="toggleCheckbox('lamp');"
@@ -27,6 +34,19 @@
             ontouchstart="toggleCheckbox('heater');                                 ">ON / OFF </button>
         <script>function toggleCheckbox(x) { var xhr = new XMLHttpRequest(); xhr.open("GET", "/" + x, true); xhr.send(); }</script>
         <br>
+    </form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>Garage Peripheral</h2><br>
+    </form><br>
+    <hr>
+    <form method="post" action="/post">
+        <h2>ALERT!</h2><br>
+    </form><br>
+    <hr>
+    <form action="settings.html">
+        <h2>Settings</h2>
+        <input type="submit" name="submit" value="To settings">;
     </form><br>
     <hr>
 </body>
