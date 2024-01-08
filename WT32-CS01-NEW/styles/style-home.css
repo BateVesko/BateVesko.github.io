@@ -59,3 +59,9 @@ form {
     color: #f1ffe7;
 }
 
+a {
+    display: flex;
+    justify-content: end;
+    color: red;
+}
+
