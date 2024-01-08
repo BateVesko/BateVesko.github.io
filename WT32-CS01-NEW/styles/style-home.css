@@ -61,8 +61,17 @@ form {
 
 a {
     display: flex;
-    margin-right: 3%;
+    margin: 0 3%;
     justify-content: end;
     color: red;
+}
+
+img {
+    margin-right: 2%;
+}
+
+h1 img {
+    width: 30px;
+    height: 30px;
 }
 

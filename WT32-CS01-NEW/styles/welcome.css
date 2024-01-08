@@ -75,5 +75,16 @@ form {
 
 a {
     color: red;
+    
+}
+
+img {
+    margin-right: 2%;
+    vertical-align: middle;
+}
+
+h1 img {
+    width: 30px;
+    height: 30px;
 }
 
