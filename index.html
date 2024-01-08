@@ -51,6 +51,12 @@
                     alert("Грешно потребителско име или парола.");
                 }
             }
+
+            function handleKeyPress(event, formClassName, expectedUsername, expectedPassword) {
+                if (event.keyCode === 13) {    /* Enter (код 13) */
+                    validateForm(formClassName, expectedUsername, expectedPassword);
+                }
+            }
         </script>
 
         <div class="main-container">
@@ -63,10 +69,10 @@
                 <div class="project-form">
                     <form class="form1">
                         <label for="username">Потребителско име:</label>
-                        <input type="text" class="username" name="username" required>
+                        <input type="text" class="username" name="username" required onkeypress="handleKeyPress(event, 'form1', 'Bojana', '1111')">
                         <br>
                         <label for="password">Парола:</label>
-                        <input type="password" class="password" name="password" required>
+                        <input type="password" class="password" name="password" required onkeypress="handleKeyPress(event, 'form1', 'Bojana', '1111')">
                         <br>
                         <input type="button" value="Изпрати" onclick="validateForm('form1', 'Bojana', '1111')">
                     </form>
@@ -85,10 +91,10 @@
 
                     <form class="form2">
                         <label for="username">Потребителско име:</label>
-                        <input type="text" class="username" name="username" required>
+                        <input type="text" class="username" name="username" required onkeypress="handleKeyPress(event, 'form2', 'BateVesko', '0000')">
                         <br>
                         <label for="password">Парола:</label>
-                        <input type="password" class="password" name="password" required>
+                        <input type="password" class="password" name="password" required onkeypress="handleKeyPress(event, 'form2', 'BateVesko', '0000')">
                         <br>
                         <input type="button" value="Изпрати" onclick="validateForm('form2', 'BateVesko', '0000')">
                     </form>
@@ -107,18 +113,16 @@
 
                     <form class="form3">
                         <label for="username">Потребителско име:</label>
-                        <input type="text" class="username" name="username" required>
+                        <input type="text" class="username" name="username" required onkeypress="handleKeyPress(event, 'form3', 'toni', 'toni')">
                         <br>
                         <label for="password">Парола:</label>
-                        <input type="password" class="password" name="password" required>
+                        <input type="password" class="password" name="password" required onkeypress="handleKeyPress(event, 'form3', 'toni', 'toni')">
                         <br>
-                        <input type="button" value="Изпрати" onclick="validateForm('form3', 'Toni', '3333')">
+                        <input type="button" value="Изпрати" onclick="validateForm('form3', 'toni', 'toni')">
                     </form>
                 </div>
 
-                <!-- <div class="circle-button">
-                    <a href="WT32-CS01-NEW/index-wt32new.html">Вижте тук!</a>
-                </div> -->
+               
             </div>
 
         </div>
@@ -134,33 +138,3 @@
     
 </body>
 </html>
-
-
-
-                <!-- <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $username = "потребител";
-                    $password = "парола";
-
-                    $enteredUsername = $_POST["username"];
-                    $enteredPassword = $_POST["password"];
-
-                    if ($enteredUsername == $username && $enteredPassword == $password) {
-                        header("Location: /Fortuna-Adi/index-Adi.html");
-                        exit();
-                    } else {
-                        echo "Грешно потребителско име или парола.";
-                    }
-                }
-                ?> -->
-
-                <!-- <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-
-                    <label for="username">Потребителско име:</label>
-                    <input type="text" id="username" name="username" required>
-                
-                    <label for="password">Парола:</label>
-                    <input type="password" id="password" name="password" required>
-                
-                    <input type="submit" value="Изпрати">
-                </form> -->

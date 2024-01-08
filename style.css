@@ -27,8 +27,8 @@ header {
 
 main {
     height: 800px;
+    background-color: #faa638;
 }
-
 
 .header-container {
     /* max-width: 1800px; */
@@ -36,8 +36,6 @@ main {
     justify-content: space-around;
     padding: 1rem 1%;
 }
-
-
 
 .header-links ul {
     list-style: none;
@@ -47,12 +45,8 @@ main {
 }
 
 .header-links ul li {
-    /* background-color: aqua; */
     position: relative;
     top: 50%;
-    /* padding-left: 2rem; */
-    /* margin: 1rem; */
-    
 }
 
 .main-container {
@@ -75,7 +69,6 @@ main {
     align-items: center;
     gap: 2px;
     width: 100%;
-    /* margin: 1px auto; */
 }
 
 .project-name {
@@ -103,11 +96,13 @@ input[type="button"] {
     border-radius: 5px;
     background-color: #f4d58d;
     box-shadow: inset 0 0 10px rgb(0,0,0,0.3);
+    transform-origin: center; 
+    transition: transform 0.5s;
 }
 
-/* input[type="button"]:hover {
-    transform: scale(1.1);
-} */
+input[type="button"]:hover {
+    transform: translateX(-50%) scale(1.1);
+}
 
 /* .circle-button {
     background-color: #f4d58d;
@@ -150,7 +145,6 @@ footer {
 }
 
 .footer-container {
-    /* max-width: 1800px; */
     display: flex;
     justify-content: space-around;
     padding: 1rem 20%;
