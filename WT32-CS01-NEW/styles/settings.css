@@ -99,6 +99,7 @@ a {
     margin-right: 3%;
     justify-content: end;
     color: blue;
+    text-shadow: 0.5px 0.5px 0.5px #000;
 }
 
 img {
