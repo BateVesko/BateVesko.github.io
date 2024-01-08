@@ -37,7 +37,7 @@ input[type="submit"]:active {
     box-shadow: 6px 6px 6px #000;
     transform: translateY(2px);
 }
-.button {
+/* .button {
     padding: 10px 20px;
     font-size: 24px;
     text-align: center;
@@ -56,13 +56,13 @@ input[type="submit"]:active {
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-} 
-.button:hover {background-color: #57cc99}
+}  */
+/* .button:hover {background-color: #57cc99}
 .button:active {
     background-color: 57cc99;
     box-shadow: 6px 6px 6px #000;
     transform: translateY(2px);
-}
+} */
 hr {
     background-color: #80ed99;
     border: none;
