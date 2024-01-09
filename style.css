@@ -25,7 +25,7 @@ header {
     box-shadow: 0 10px 10px rgb(0,0,0,0.3);
     background-color: #f4d58d;
     color: #8d0801;
-    
+    padding: 10px 10%;
 }
 
 main {
@@ -89,6 +89,13 @@ input {
     border: 1px solid #8d0801;
 }
 
+input[type="text"], input[type="password"] {
+    width: 150px; 
+    height: 20px; 
+    border-radius: 3px;
+}
+
+
 input[type="button"] {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -142,6 +149,7 @@ footer {
     width: 100vw;
     border-top: 0.5px solid #333;
     box-shadow: 0 -10px 10px rgb(0,0,0,0.3);
+    background-color: #f4d58d;
     color: #8d0801;
 }
 

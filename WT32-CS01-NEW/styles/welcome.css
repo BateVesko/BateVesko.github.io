@@ -20,6 +20,13 @@ h1:nth-child(1) {
     box-shadow: inset 0px 0px 10px #000;
     margin-top: 20px;
 }
+
+input[type="text"], input[type="password"] {
+    width: 150px; 
+    height: 20px; 
+    border-radius: 3px;
+}
+
 input[type="submit"] {
     background-color: #80ed99;
     color: #22577a;
