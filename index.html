@@ -9,20 +9,13 @@
 <body>
 
     <header>
-        <div class="header-container">
+        <h1>Vesina Design</h1>
 
-            <div class="header-name">
-                <h1>Vesina Design</h1>
-            </div>
-
-            <div class="header-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </div>
-
-        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        
     </header>
 
     <main>
@@ -59,81 +52,61 @@
             }
         </script>
 
-        <div class="main-container">
+        <div class="project">
+            <h2>Проект Счетоводна къща "Фидес"</h2>
+
+            <form class="form1">
+                <label for="username">User:</label>
+                <input type="text" class="username" name="username" required title="Enter your username" onkeypress="handleKeyPress(event, 'form1', 'Bojana', '1111')">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" class="password" name="password" required title="Enter your password" onkeypress="handleKeyPress(event, 'form1', 'Bojana', '1111')">
+                <br>
+                <input type="button" value="Изпрати" onclick="validateForm('form1', 'Bojana', '1111')">
+            </form>
+
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <h2>Проект "Фортуна-Ади" - Владо Щаков</h2>
+
+            <form class="form2">
+                <label for="username">Потребителско име:</label>
+                <input type="text" class="username" name="username" required title="Enter your username" onkeypress="handleKeyPress(event, 'form2', 'BateVesko', '0000')">
+                <br>
+                <label for="password">Парола:</label>
+                <input type="password" class="password" name="password" required title="Enter your password" onkeypress="handleKeyPress(event, 'form2', 'BateVesko', '0000')">
+                <br>
+                <input type="button" value="Изпрати" onclick="validateForm('form2', 'BateVesko', '0000')">
+            </form>
             
-            <div class="project">
-                <div class="project-name">
-                    <h2>Проект Счетоводна къща "Фидес"</h2>
-                </div>
+        </div>
 
-                <div class="project-form">
-                    <form class="form1">
-                        <label for="username">User:</label>
-                        <input type="text" class="username" name="username" required title="Enter your username" onkeypress="handleKeyPress(event, 'form1', 'Bojana', '1111')">
-                        <br>
-                        <label for="password">Password:</label>
-                        <input type="password" class="password" name="password" required title="Enter your password" onkeypress="handleKeyPress(event, 'form1', 'Bojana', '1111')">
-                        <br>
-                        <input type="button" value="Изпрати" onclick="validateForm('form1', 'Bojana', '1111')">
-                    </form>
-                </div>
+        <hr>
 
-            </div>
+        <div class="project">
+            <h2>Project WT32-SC01 3.5" by Anton Ivanov</h2>
 
-            <hr>
+            <form class="form3">
+                <label for="username">User:</label>
+                <input type="text" class="username" name="username" required title="Enter your username" onkeypress="handleKeyPress(event, 'form3', 'toni', 'toni')">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" class="password" name="password" required title="Enter your password" onkeypress="handleKeyPress(event, 'form3', 'toni', 'toni')">
+                <br>
+                <input type="button" value="Изпрати" onclick="validateForm('form3', 'toni', 'toni')">
+            </form>
 
-            <div class="project">
-                <div class="project-name">
-                    <h2>Проект "Фортуна-Ади" - Владо Щаков</h2>
-                </div>
-
-                <div class="project-form">
-
-                    <form class="form2">
-                        <label for="username">Потребителско име:</label>
-                        <input type="text" class="username" name="username" required title="Enter your username" onkeypress="handleKeyPress(event, 'form2', 'BateVesko', '0000')">
-                        <br>
-                        <label for="password">Парола:</label>
-                        <input type="password" class="password" name="password" required title="Enter your password" onkeypress="handleKeyPress(event, 'form2', 'BateVesko', '0000')">
-                        <br>
-                        <input type="button" value="Изпрати" onclick="validateForm('form2', 'BateVesko', '0000')">
-                    </form>
-                </div>
-                
-            </div>
-
-            <hr>
-
-            <div class="project">
-                <div class="project-name">
-                    <h2>Project WT32-SC01 3.5" by Anton Ivanov</h2>
-                </div>
-
-                <div class="project-form">
-
-                    <form class="form3">
-                        <label for="username">User:</label>
-                        <input type="text" class="username" name="username" required title="Enter your username" onkeypress="handleKeyPress(event, 'form3', 'toni', 'toni')">
-                        <br>
-                        <label for="password">Password:</label>
-                        <input type="password" class="password" name="password" required title="Enter your password" onkeypress="handleKeyPress(event, 'form3', 'toni', 'toni')">
-                        <br>
-                        <input type="button" value="Изпрати" onclick="validateForm('form3', 'toni', 'toni')">
-                    </form>
-                </div>
-
-               
-            </div>
-
+           
         </div>
 
     </main>
 
     <footer>
-        <div class="footer-container">
-            <p>&copy All rights reserved</p>
-            <p>Made by Bate Vesko</p>
-        </div>
+        <p>&copy All rights reserved</p>
+        <p>Made by Bate Vesko</p>
     </footer>
     
 </body>
