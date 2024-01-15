@@ -177,9 +177,8 @@ footer {
 }
 
 .footer a {
-    border: 1px solid red;
     text-decoration: none;
-    color: #2a9d8f;   
+    /* color: #2a9d8f;    */
     display: flex;
     justify-content: center;
     transition: transform 0.3s ease;
@@ -196,7 +195,7 @@ footer {
 }
 
 footer hr {
-    width: 95%;
+    width: 96%;
     margin: 0 auto;
     border: 1px solid #e9c46a;
 }
@@ -240,6 +239,9 @@ footer hr {
         text-align: center;
         gap: 0;
     }
+    header {
+        background-size: 125%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -249,10 +251,16 @@ footer hr {
     .fides-name h1:first-of-type {
         display: none;
     }
+    header {
+        background-size: 165%;
+    }
 }
 
 @media (max-width: 400px) {
     body {
         font-size: 10px;
+    }
+    header {
+        background-size: 175%;
     }
 }
