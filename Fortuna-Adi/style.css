@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 * {
     padding: 0;
     margin: 0;
@@ -18,20 +21,51 @@ body {
 
 header {
     /* height: 10%; */
-    border-bottom: 0.5px solid #333;
+    /* border-bottom: 0.5px solid #333; */
     box-shadow: 0 10px 10px rgb(0,0,0,0.3);
-    background-color: #f4d58d;
-    
-}
-
-
-.header-container {
-    /* max-width: 1800px; */
+    /* background-color: #f4d58d; */
+    background-image: url('images/Baza_02.png');
+    background-size: 116%;
+    background-repeat: no-repeat;
+    background-position: 53% 49%;
+    height: 30em;
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 1%;
+    flex-direction: column;
+    border-bottom: 2px solid #264653;
 }
 
+.header-top {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color: #e76f51;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 300;
+    border-bottom: 2px solid #264653;
+}
+
+.header-top .fides-name {
+    /* background-color: aquamarine; */
+    color: #264653;
+    font-size: 1.0em;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header-top .header-top-right {
+    background-color: red;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+}
+
+.header-top-right h2 {
+    /* display: block; */
+    /* margin-top: 20px; */
+    color: aliceblue;
+}
 
 
 .header-links ul {
@@ -50,75 +84,162 @@ header {
     
 }
 
-.main-container {
-    /* border: 2px solid blue; */
+main {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: 96%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: #e9c46a;
+    align-items: center;
 }
 
-.project {
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap ;
+    padding: 0 2rem;
+}
+
+article {
     /* border: 1px solid red; */
     display: flex;
-    justify-content:center;
-    gap: 2px;
-    width: 100%;
-    margin: 1px auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    min-width: 350px;
+    flex: 1 0 30%;
+    padding: 1.5em;
 }
 
-.project-name {
-    /* border: 1px solid green; */
-    margin: auto auto;
+article ul {
+    margin-left: 50px;
 }
 
-.circle-button {
-    background-color: #f4d58d;
-    position: relative;
-    width: 200px;
-    height: 50px;
-    padding: 20px;
-    margin: 1rem auto;
-    box-shadow: inset 0 0 10px rgb(0,0,0,0.3);
-    border: 1px solid #333;
-    border-radius: 50%;
-    transition: transform 0.5s ease;
+article h2 {
+    text-align: center;
+    margin: 1em auto;
+    /* font-size: 1.4rem; */
+    font-weight: 600;
+    font-family: serif;
 }
 
-.circle-button:hover {
-    transform: scale(1.2);
+article p {
+    text-align: justify;
 }
 
-.circle-button a {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    /* background-color: yellow; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #333;
-    text-decoration: none;
-    font-size: 1.0rem;
+article .price {
+    /* width: 50%; */
+    padding: 0 10%;
+    background-color: #e76f51;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+.background-01 {
+    /* background-image: url('../backgrounds/background-01.jpg'); */
+    background-color: rgb(42,157,143,0.4);/*rgb(42,157,143)  #2a9d8f*/
+    /* background-size: 5px 5px; */
+    /* background-repeat: repeat; */
+    border-radius: 0.5em;
+}
+
+.sofia-map {
+    /* border: 2px solid red; */
+}
+
+.sofia-map img {
+    /* margin: 0 10px; */
+    /* width: 90%; */
+    border-radius: 20px;
 }
 
 
 
 footer {
-    width: 100vw;
-    border-top: 0.5px solid #333;
-    box-shadow: 0 -10px 10px rgb(0,0,0,0.3);
-    position: absolute;
-    bottom: 0;
-    background-color: #f4d58d;
+    display: flex;
+    flex-direction: column;
+    background-color:  #e76f51;;
+    /* text-decoration: underline; */
 }
 
-.footer-container {
-    /* max-width: 1800px; */
+.footer-top {
+    /* border: 2px solid red; */
+    flex: 1 0 30%;
+    /* min-width: 250px; */
+    padding:0.5em 2.5%;
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 20%;
+    justify-content:space-between;
+
+    align-items: center;
+    vertical-align: middle;
+}
+
+.footer i:first-of-type  {
+    font-size: 1.6em;
+}
+
+.footer:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer:nth-child(2) i {
+    font-size: 1.8em;
+}
+
+.footer p {
+    /* border: 1px solid white; */
+    text-align: center;
+}
+
+.footer a {
+    border: 1px solid red;
+    text-decoration: none;
+    color: #2a9d8f;   
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.footer:nth-child(2) a:hover {
+    transform: scale(1.20);
+    z-index: 1;
+}
+
+.footer:last-child a:hover {
+    transform: scale(1.08);
+    z-index: 1;
+}
+
+footer hr {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #e9c46a;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2em 2.5% 0.6em 2.1%;
+}
+
+.footer-bottom p {
+    margin: auto 0;
+}
+
+@media (width<=1500px) {
+    .fides-name,
+    .header-top-right {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (width<=900px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
 }

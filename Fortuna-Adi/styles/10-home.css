@@ -25,34 +25,6 @@ header {
     /* top: -26px; */
 }
 
-/* header::after {
-    content: "ЗЪРНЕНИ OТСЕВКИ";
-    position: absolute;
-    top: 19%;
-    left: 59%;
-    color: red;
-    font-size: 1.05em;
-    font-style: normal;
-    font-weight: 900;
-    font-family: sans-serif;
-    transform: rotate(-4deg) skewY(9deg);
-    letter-spacing: -2.5px; 
-    line-height: 1;
-    z-index: 2;
-} */
-
-/*************************** logo **********************/
-/* 
-.logo-container {
-    top: 40%;
-    left: 80%;
-    transform: rotate(20deg) rotateY(-40deg) rotateX( 5deg);
-}
-
-.text-ring::before {
-    box-shadow: 10px 1px 0px 0px #5B3203, inset 0 0 2px #5B3203; 
-}
-
 .sofia i {
     box-shadow: 1.5px 0px 0 #5B3203;
 } */
@@ -83,9 +55,6 @@ header {
 }
 
 .logo-message p {
-    /* font-family: 'Scriptina', serif; */
-    /* font-family: 'Homallond', serif; */
-    /* font-family: 'Scriptina', serif; */
     text-shadow: 0px 0px 2.5px white;
 }
 
@@ -107,14 +76,6 @@ header {
 .pages ul li:nth-child(1) a {
     color: black;
 }
-
-
-
-
-
-
-
-
 /******************************************************/
 
 /***************************************************************/
@@ -123,13 +84,18 @@ header {
     position: relative;
 }
 
-
 main {
+    display: flex;
+    flex-direction: column;
+    background: #e9c46a;
+}
+
+
+.main-top {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap ;
-    background: #e9c46a;
     padding: 0 2rem;
 }
 
@@ -168,6 +134,15 @@ main br {
 
 article a {
     margin-top: 2em;
+}
+
+.sofia-map {
+    padding: 2rem;
+    border-radius: 3px;
+}
+
+.sofia-map img {
+    border-radius: 10px;
 }
 
 @media (width<=1000px) {
