@@ -45,16 +45,14 @@ header {
 }
 
 .header-top .fides-name {
-    /* background-color: aquamarine; */
     color: #264653;
     font-size: 1.0em;
     display: flex;
     align-items: center;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .header-top .header-top-right {
-    background-color: red;
     display: flex;
     vertical-align: middle;
     align-items: center;
@@ -62,26 +60,7 @@ header {
 }
 
 .header-top-right h2 {
-    /* display: block; */
-    /* margin-top: 20px; */
     color: aliceblue;
-}
-
-
-.header-links ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 1rem 0;
-}
-
-.header-links ul li {
-    /* background-color: aqua; */
-    position: relative;
-    top: 50%;
-    /* padding-left: 2rem; */
-    /* margin: 1rem; */
-    
 }
 
 main {
@@ -145,12 +124,15 @@ article .price {
 }
 
 .sofia-map {
-    /* border: 2px solid red; */
+   display: flex;
+   margin: 20px auto;
 }
 
 .sofia-map img {
     /* margin: 0 10px; */
-    /* width: 90%; */
+    width: 80vw;
+    height: auto;
+    display: block;
     border-radius: 20px;
 }
 
@@ -229,6 +211,9 @@ footer hr {
 }
 
 @media (width<=1500px) {
+    body {
+        font-size: 13px;
+    }
     .fides-name,
     .header-top-right {
         flex-direction: column;
@@ -238,8 +223,12 @@ footer hr {
 }
 
 @media (width<=900px) {
+    body {
+        font-size: 12px;
+    }
     .header-top {
         flex-direction: column;
         text-align: center;
+        gap: 0;
     }
 }
