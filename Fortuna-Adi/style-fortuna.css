@@ -14,17 +14,14 @@ image {
 }
 
 body {
-    width: 100%;
+    max-width: 1800px;
     margin: 0 auto;
     font: 14px/1.5 'Verdana', sans-serif;
 }
 
 header {
-    /* height: 10%; */
-    /* border-bottom: 0.5px solid #333; */
     box-shadow: 0 10px 10px rgb(0,0,0,0.3);
-    /* background-color: #f4d58d; */
-    background-image: url('images/Baza_02.png');
+    background-image: url('images/Baza_02.webp');
     background-size: 116%;
     background-repeat: no-repeat;
     background-position: 53% 49%;
@@ -112,20 +109,28 @@ article p {
 
 article .price {
     /* width: 50%; */
-    padding: 0 10%;
+    padding: 0 8%;
     background-color: #e76f51;
     border-radius: 5px;
-    color: white;
+    color: black;
+    font-size: 20px;
+    /* font-weight: bolder; */
     margin-top: 20px;
 }
 
+article a {
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: white;
+    padding: 2px 5px;
+}
+
 .background-01 {
-    /* background-image: url('../backgrounds/background-01.jpg'); */
-    background-color: rgb(42,157,143,0.4);/*rgb(42,157,143)  #2a9d8f*/
-    /* background-size: 5px 5px; */
-    /* background-repeat: repeat; */
+    background-color: rgb(42,157,143,0.4);
     border-radius: 0.5em;
 }
+
+
 
 .sofia-map {
    display: flex;
@@ -135,6 +140,7 @@ article .price {
 .sofia-map img {
     /* margin: 0 10px; */
     width: 80vw;
+    max-width: 800px;
     height: auto;
     display: block;
     border-radius: 20px;
@@ -178,6 +184,10 @@ footer {
 
 .footer:nth-child(2) i {
     font-size: 2.2em;
+}
+
+.footer:nth-child(2) a {
+    font-size: 20px;
 }
 
 .footer:last-child p {
@@ -230,7 +240,7 @@ footer hr {
 
 @media (max-width: 1500px) {
     body {
-        font-size: 13px;
+        /* font-size: 14px; */
     }
     .fides-name,
     .header-top-right {
@@ -250,7 +260,7 @@ footer hr {
 
 @media (max-width: 900px) {
     body {
-        font-size: 12px;
+        /* font-size: 13px; */
     }
     .header-top {
         flex-direction: column;
@@ -259,6 +269,7 @@ footer hr {
     }
     header {
         background-size: 125%;
+        background-position: 53% 29%;
     }
     .header-top .fides-name {
         padding: 0;
@@ -267,21 +278,23 @@ footer hr {
 
 @media (max-width: 600px) {
     body {
-        font-size: 11px;
+        font-size: 13px;
     }
     .fides-name h1:first-of-type {
         display: none;
     }
     header {
         background-size: 165%;
+        background-position: 53% -10%;
     }
 }
 
 @media (max-width: 400px) {
     body {
-        font-size: 10px;
+        /* font-size: 12px; */
     }
     header {
         background-size: 175%;
+        background-position: 53% -9%;
     }
 }
