@@ -139,8 +139,8 @@ article a {
 
 .sofia-map img {
     /* margin: 0 10px; */
-    width: 80vw;
-    max-width: 800px;
+    width: 95vw;
+    max-width: 550px;
     height: auto;
     display: block;
     border-radius: 20px;
@@ -168,7 +168,10 @@ footer {
 
 .footer-top a {
     font-weight: 600;
-    /* font-size: 16px; */
+    font-size: 16px;
+    background-color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
 }
 
 .footer i:first-of-type  {
