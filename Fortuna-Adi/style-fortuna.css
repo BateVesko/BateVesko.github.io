@@ -80,10 +80,6 @@ main {
     padding: 0 2rem;
 }
 
-.main-top span {
-    display: none;
-}
-
 article {
     /* border: 1px solid red; */
     display: flex;
@@ -93,6 +89,10 @@ article {
     min-width: 280px;
     flex: 1 0 30%;
     padding: 1.5em;
+}
+
+article span {
+    display: none;
 }
 
 article ul {
