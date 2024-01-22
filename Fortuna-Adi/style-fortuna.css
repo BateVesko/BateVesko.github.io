@@ -80,6 +80,10 @@ main {
     padding: 0 2rem;
 }
 
+.main-top span {
+    display: none;
+}
+
 article {
     /* border: 1px solid red; */
     display: flex;
