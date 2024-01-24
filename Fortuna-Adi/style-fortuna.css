@@ -138,16 +138,15 @@ article a {
 
 .sofia-map {
    display: flex;
-   margin: 20px auto;
+   margin-bottom: 20px;
 }
 
 .sofia-map img {
-    /* margin: 0 10px; */
     width: 95vw;
     max-width: 550px;
     height: auto;
     display: block;
-    border-radius: 20px;
+    border-radius: 0.5em;
 }
 
 
@@ -275,8 +274,9 @@ footer hr {
         gap: 0;
     }
     header {
+        height: 25em;
         background-size: 125%;
-        background-position: 53% 29%;
+        background-position: 53% 35%;
     }
     .header-top .fides-name {
         padding: 0;
@@ -291,8 +291,9 @@ footer hr {
         display: none;
     }
     header {
-        background-size: 165%;
-        background-position: 53% -10%;
+        height: 23em;
+        background-size: 145%;
+        background-position: 53% 25%;
     }
 }
 
@@ -302,6 +303,6 @@ footer hr {
     }
     header {
         background-size: 175%;
-        background-position: 53% -9%;
+        background-position: 53% 10%;
     }
 }
