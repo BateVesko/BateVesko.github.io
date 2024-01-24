@@ -295,6 +295,17 @@ footer hr {
         background-size: 145%;
         background-position: 53% 25%;
     }
+    .footer-top {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .mappa {
+        display: flex;
+        flex-direction: row;
+    }
+    footer .address br {
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
