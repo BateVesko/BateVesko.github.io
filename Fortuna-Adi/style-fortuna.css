@@ -285,6 +285,9 @@ footer hr {
         background-size: 145%;
         background-position: 53% 25%;
     }
+    .main-top {
+        padding: 0 2.5vw;
+    }
     .footer-top {
         flex-direction: column;
         gap: 1em;
