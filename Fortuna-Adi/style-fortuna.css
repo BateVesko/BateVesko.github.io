@@ -155,13 +155,10 @@ footer {
     display: flex;
     flex-direction: column;
     background-color:  #e76f51;
-    /* text-decoration: underline; */
 }
 
 .footer-top {
-    /* border: 2px solid red; */
     flex: 1 0 30%;
-    /* min-width: 250px; */
     padding:0.5em 2.5%;
     display: flex;
     justify-content:space-between;
@@ -173,8 +170,8 @@ footer {
     font-weight: 600;
     font-size: 16px;
     background-color: white;
-    padding: 2px 4px;
-    border-radius: 50%;
+    padding: 1px;
+    border-radius: 5px;
 }
 
 .footer i:first-of-type  {
@@ -212,7 +209,6 @@ footer {
 
 .footer a {
     text-decoration: none;
-    /* color: #2a9d8f;    */
     display: flex;
     justify-content: center;
     transition: transform 0.3s ease;
@@ -245,29 +241,23 @@ footer hr {
 }
 
 @media (max-width: 1500px) {
-    body {
-        /* font-size: 14px; */
-    }
     .fides-name,
     .header-top-right {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
         justify-content: center;
     }
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .header-top-right {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-}
+} */
 
 @media (max-width: 900px) {
-    body {
-        /* font-size: 13px; */
-    }
     .header-top {
         flex-direction: column;
         text-align: center;
@@ -309,11 +299,14 @@ footer hr {
 }
 
 @media (max-width: 400px) {
-    body {
-        /* font-size: 12px; */
-    }
     header {
         background-size: 175%;
         background-position: 53% 10%;
+    }
+    .footer-top a {
+        font-size: 14px;
+    }
+    article .price {
+        font-size: 16px;
     }
 }
