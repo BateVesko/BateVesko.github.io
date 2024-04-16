@@ -1,0 +1,232 @@
+@import url('00-reset.css');
+@import url('01-header-top.css');
+@import url('11-logo-cloud.css');
+@import url('90-footer.css');
+
+
+body {
+    position: relative;
+}
+
+/* header {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.pages ul li:nth-child(4) {
+    background-color: #eee;
+    border-radius: 0 0 3px 50%;
+}
+
+.pages ul li:nth-child(4) a {
+    color: black;
+}
+
+/*************************** logo **********************/
+
+.logo-container {
+    top: 6%;
+    left: 48%;
+    transform: scale(0.4);
+    /* transform: rotate(20deg) rotateY(-40deg) rotateX( 5deg); */
+}
+
+.text-ring::before {
+    box-shadow: 0px 0px 5px 0px #5B3203, inset 0 0 2px #5B3203; 
+}
+
+.sofia i {
+    box-shadow: 1.5px 0px 0 #5B3203;
+}
+
+.logo-container:hover {
+    transform: scale(0.6);
+}
+  
+.logo-container:hover .text-ring::before {
+box-shadow: none;
+}
+
+.logo-container:hover .sofia i {
+box-shadow: 0px 0px 0 #5B3203;
+}
+  
+
+/******************************** logo ****************/
+
+
+/******************************** main ******************************/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-top {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1em;
+    flex: 1 0 45%;
+}
+
+.main-top-left {
+    /* border: 2px solid red; */
+    display: flex;
+    flex: 1 0 45%;
+    margin: 1em 0;
+    width: 50%;
+    height: auto;
+}
+
+.img-Bojana {
+    /* border: 1px solid blue; */
+    width: 50%;
+    padding: 2%;
+}
+
+.img-Bojana img {
+    border: 1em solid white;
+}
+
+.main-top-right {
+    /* border: 2px solid green; */
+    margin: 1em 0;
+    display: flex;
+    flex: 1 0 45%;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.main-top-right .work-section-column {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+}
+
+.main-top-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-section-column {
+    /* border: 2px solid red; */
+    padding: 1.5rem 1rem 2rem 1.5rem;
+}
+
+.work-section-column h3
+ {
+    margin: 0.5em 0 0 2em;
+}
+
+.work-section-column p {
+    margin: 0.5em 0 0 3em;
+    /* text-align: center; */
+}
+
+.work-section-column a
+ {
+    margin: 1em 2em;
+}
+
+.main-bottom {
+    display: flex;
+    background-color: #eee;
+    margin-bottom: 1em;
+}
+
+.connections {
+    flex: 1 0 50%;
+    padding: 5em;
+}
+
+input[type="text"],
+input[type="email"] {
+    max-width: 15em;
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+#message {
+    width: 100%;
+}
+
+.sofia-map img {
+    border: 1em solid white;
+}
+
+/*******************************  media  *****************************/
+
+@media (width<=1400px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (width<=1200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (width<=1000px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media (width<=800px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-top {
+        display: block;
+    }
+    .main-top-left {
+        /* display: block; */
+        width: 100%;
+    }
+
+    .main-top-right {
+        flex-direction: row;
+        flex: 1 0 40%;
+    }
+
+    .main-bottom {
+        flex-direction: column;
+    }
+
+    .footer-top {
+        flex: 1 0 30%;
+    }
+    
+    .logo-container {
+        top: 4%;
+        left: 88%;
+        transform: scale(0.4);
+    }
+}
+
+@media (width<=600px) {
+    body {
+        font-size: 10px;
+    }
+    .main-top-right {
+        flex-direction: column;
+    }
+    #message {
+       width: 100%;
+   }
+   .logo-container {
+    top: 6%;
+    left: 88%;
+    transform: scale(0.4);
+    }
+
+}
+
+@media (width<=400) {
+
+}

@@ -1,0 +1,23 @@
+@media (width<=1200px) {
+    body {
+        background-color: red;
+    }
+    
+    main article {
+        flex: 1 1 45%;
+    }
+
+
+    
+}
+
+
+@media (width<=800px) {
+    body {
+        background-color: yellow;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,172 @@
+@import url('00-reset.css');
+@import url('01-header-top.css');
+@import url('11-logo-cloud.css');
+@import url('90-footer.css');
+
+
+
+header {
+    background-image: url('../images/img-003.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 60% 65%;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bottom {
+    position:relative;
+    height: inherit;
+}
+
+/* .logo {
+    position: absolute;
+    max-width: 15%;
+    top: 45%;
+    left: 11%;
+} */
+
+/*************************** logo **********************/
+
+.logo-container {
+    top: 45%;
+    left: 15%;
+    transform: rotate(-20deg) rotateY(40deg) rotateX(0deg);
+}
+
+.text-ring::before {
+    box-shadow: -10px -0.5px 0px 0px #5B3203, inset 0 0 2px #5B3203; 
+}
+
+.sofia i {
+    box-shadow: -1.5px 0px 0 #5B3203;
+}
+
+/******************************** logo ****************/
+
+.logo-message {
+    max-width: 70%;
+    position: absolute;
+    color: #333; 
+    position: absolute;
+    top: 9%;
+    left: 29%;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    font-family: serif;
+}
+
+.logo-message p {
+    text-shadow: 0px 0 2.5px white;
+}
+
+.logo-message p:nth-child(1) {
+    padding-left: 3em;
+}
+
+.logo-message .author {
+    font-size: 0.75em;
+    padding-left: 19em;
+    margin-top: 0.8em;
+}
+
+
+.pages ul li:nth-child(3) {
+    background-color: #eee;
+    border-radius: 0 0 3px 50%;
+}
+
+.pages ul li:nth-child(3) a {
+    color: black;
+}
+
+/***************************  main *************************/
+
+main {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap ;
+}
+
+.main-right {
+    margin: 1rem 0;
+    background-color: #f6f6f6;
+    min-width: 350px;
+    flex: 1 0 50%;
+    padding: 2.5em;
+    text-align: justify;
+}
+
+.main-right h2 {
+    text-align: center;
+    margin: 0em auto;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: serif;
+}
+
+.main-right p {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.main-right p i {
+    margin-right: 1em;
+}
+
+main br {
+    display: block;
+    content: '';
+    margin: 20px 0;
+}
+
+/* .send-button {
+    display: flex;
+    justify-content: center;
+} */
+
+.send-button:hover {
+    transform: scale(1.10);
+    z-index: 1;
+}
+
+.page3:hover {
+    transform: scale(1.10);
+    z-index: 1;
+}
+
+@media (width<=1000px) {
+    header {
+        background-size: 180%;
+    }
+}
+
+@media (width<=800px) {
+    header {
+        background-size: 210%;
+    }
+}
+
+@media (width<=650px) {
+    header {
+        background-size: 300%;
+        background-position: 80% 0%;
+        top: 0;
+        height: 18em;
+    }
+
+
+    .logo-container {
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%) scale(0.7);
+    }
+    .logo-container:hover {
+        transform: scale(0.9);
+    }
+}
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form</title>
+    <link rel="stylesheet" href="contact-form.css">
+
+    <script>
+        window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('recipient')) {
+                document.getElementById('recipient').value = urlParams.get('recipient');
+            }
+        };
+    </script>
+
+</head>
+<body>
+    <main>
+        <div class="contact-form connections">
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                    <label for="recipient">Получател:</label><br>
+                    <input type="text" id="recipient" name="recipient"><br><br>
+                </div>
+                <div class="form-example">
+                  <label for="name">Вашето име: </label><br>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-example">
+                  <label for="email">email: </label><br>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div class="form-example">
+                    <label for="message">Вашият въпрос:</label><br>
+                    <textarea id="message" name="message" rows="15" cols="70"></textarea><br><br>
+                </div>
+                <div class="form-example">
+                  <input type="submit" value="Изпрати!" />
+                </div>
+              </form>
+              
+        </div>
+    </main>
+</body>
+</html>

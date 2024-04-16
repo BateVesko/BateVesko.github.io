@@ -1,0 +1,178 @@
+@import url('00-reset.css');
+@import url('01-header-top.css');
+@import url('90-footer.css');
+@import url('11-logo-cloud.css');
+
+body {
+    position: relative;
+}
+
+header {
+    position: relative;
+    background-image: url('../images/img_02.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 30% 0%;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bottom {
+    position:relative;
+    height: inherit;
+}
+
+/* .logo {
+    position: absolute;
+    max-width: 15%;
+    top: 45%;
+    left: 11%;
+} */
+
+/*************************** logo **********************/
+
+.logo-container {
+    top: 35%;
+    left: 9%;
+    transform: rotate(-20deg) rotateY(40deg) rotateX(15deg);
+}
+
+.text-ring::before {
+    box-shadow: -10px 1.5px 0px 0px #5B3203, inset 0 0 2px #5B3203; 
+}
+
+.sofia i {
+    box-shadow: -1.5px 0px 0 #5B3203;
+}
+
+/******************************** logo ****************/
+
+.logo-message {
+    /* border: 2px solid yellow; */
+    position: absolute;
+    color: white; 
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    font-family: serif;
+}
+
+.logo-message p {
+    text-shadow: 0 0 2px rgb(0,0,0,0.7);
+}
+
+.logo-message p:nth-child(1) {
+    padding-left: 3em;
+}
+
+.logo-message .author {
+    font-size: 0.75em;
+    padding-left: 16em;
+}
+
+
+.pages ul li:nth-child(2) {
+    background-color: #eee;
+    border-radius: 0 0 3px 50%;
+}
+
+.pages ul li:nth-child(2) a {
+    color: black;
+}
+
+
+/*********************************************/
+
+
+/***************************************** MAIN *************************************/
+
+main h2 {
+    text-align: center;
+    margin: 1em auto;
+    padding: 1em;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap ; */
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* padding: 2.5em 5em; */
+}
+
+.direction {
+    width: 100%;
+    padding: 2rem 5rem;
+    
+}
+
+.direction a {
+    text-align: center;
+}
+
+.main-right h3 {
+    text-align: center;
+    margin: 0em auto;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: serif;
+}
+
+.main-right p {
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+.main-right p i {
+    margin-right: 1em;
+}
+
+main br {
+    display: block;
+    content: '';
+    margin: 20px 0;
+}
+
+.main-right a {
+    display: block;
+    margin-top: 2em;
+}
+
+.style1 {
+    margin-top: 2px;
+}
+
+
+.background-02 {
+    background-image: url('../backgrounds/background-02.jpg');
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    border-radius: 0.5em;
+}
+
+.background-03 {
+    background-image: url('../backgrounds/background-05.jpg');
+    background-size: 500px 500px;
+    background-repeat: repeat;
+    border-radius: 0.5em;
+}
+
+.background-04 {
+    background-image: url('../backgrounds/background-06.jpg');
+    background-size: 2500px 2500px;
+    background-repeat: repeat;
+    border-radius: 0.5em;
+}
+
+.background-05 {
+    background-image: url('../backgrounds/background-01.jpg');
+    background-size: 5px 5px;
+    background-repeat: repeat;
+    border-radius: 0.5em;
+}
