@@ -138,3 +138,11 @@ hr {
         align-items: center;
     }
 }
+/*-- Custom CSS for redutaBig.png --*/
+.fullscreen-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/*-- End Custom CSS for redutaBig.png --*/
